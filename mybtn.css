@@ -7,16 +7,6 @@
     --mybtn-bg-color: #E26A2C;
 }
 
-body {
-    padding: 10px;
-    font-family: 'Courier New';
-}
-
-a {
-    text-decoration: none;
-    font-size: var(--mybtn-font-size);
-}
-
 .mybtn-color {
     border: none;
     background-color: var(--mybtn-bg-color);
