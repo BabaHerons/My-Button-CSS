@@ -1,0 +1,62 @@
+:root {
+    --mybtn-font-family: 'sans';
+    --mybtn-font-size: 20px;
+    --mybtn-padding-inline: calc(var(--mybtn-font-size)/2);
+    --mybtn-border-radius: calc(var(--mybtn-font-size)/5);
+    --mybtn-text-color: #EADEDE;
+    --mybtn-bg-color: #E26A2C;
+}
+
+body {
+    padding: 10px;
+    font-family: 'Courier New';
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--mybtn-font-size);
+}
+
+.mybtn-color {
+    border: none;
+    background-color: var(--mybtn-bg-color);
+    color: var(--mybtn-text-color);
+}
+
+.mybtn-color:hover {
+    border: calc(var(--mybtn-font-size)/25) solid var(--mybtn-text-color);
+}
+
+.mybtn-outline-color {
+    background-color: white;
+    color: var(--mybtn-bg-color);
+    border: calc(var(--mybtn-font-size)/15) solid var(--mybtn-bg-color);
+}
+
+.mybtn-outline-color:hover {
+    background-color: var(--mybtn-bg-color);
+    color: var(--mybtn-text-color);
+    border: calc(var(--mybtn-font-size)/15) solid var(--mybtn-text-color);
+    transition: 100ms;
+}
+
+.mybtn {
+    border-radius: var(--mybtn-border-radius);
+    padding-inline: var(--mybtn-padding-inline);
+    padding-bottom: calc(var(--mybtn-padding-inline)/2);
+    padding-top: calc(var(--mybtn-padding-inline)/2);
+    font-family: var(--mybtn-font-family);
+    font-size: var(--mybtn-font-size);
+    /* box-shadow: 0px 0px 5px black; */
+    transition: 0.1ms;
+}
+
+.mybtn:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.mybtn:active {
+    box-shadow: none;
+    transform: scale(1);
+}
